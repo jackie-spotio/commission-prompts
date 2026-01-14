@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en" class="light"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;AI Prompts to Simplify Commission Structure Decisions&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Plus Jakarta Sans', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.custom-scrollbar::-webkit-scrollbar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.custom-scrollbar::-webkit-scrollbar-track {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: transparent;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.custom-scrollbar::-webkit-scrollbar-thumb {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #cbd5e1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.dark .custom-scrollbar::-webkit-scrollbar-thumb {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #475569;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.gem-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.gem-card:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(-4px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.prompt-preview {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: -webkit-box;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-line-clamp: 3;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-box-orient: vertical;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 min-h-screen"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Navigation / Header --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-4 h-16 flex items-center justify-between"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="font-bold text-xl tracking-tight hidden sm:block"&gt;Commission &lt;span class="text-purple-600"&gt;Library&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg id="sunIcon" class="w-5 h-5 hidden dark:block text-yellow-400" fill="currentColor" viewBox="0 0 20 20"&gt;&lt;path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg id="moonIcon" class="w-5 h-5 block dark:hidden text-slate-700" fill="currentColor" viewBox="0 0 20 20"&gt;&lt;path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto px-4 py-8 max-w-7xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Hero Section --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;header class="text-center mb-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-3xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>AI Prompts to Simplify Commission Structure Decisions</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>The definitive toolkit for modeling, benchmarking, and optimizing sales compensation.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Search Area --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col gap-6 mb-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="relative max-w-3xl mx-auto w-full"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="text" id="searchInput"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl py-4 pl-12 pr-4 shadow-sm focus:ring-4 focus:ring-purple-500/10 focus:border-purple-500 outline-none transition-all"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>placeholder="Search by model type, keyword, or calculation..."&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Prompts Grid --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="gemsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Cards injected by JS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Empty State --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="emptyState" class="hidden text-center py-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-slate-100 dark:bg-slate-900 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 9.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold"&gt;No prompts found&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-slate-500"&gt;Try adjusting your search terms.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Toast Notification --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-2xl shadow-2xl flex items-center gap-3 opacity-0 translate-y-4 pointer-events-none transition-all duration-300 z-[100]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"&gt;&lt;path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="font-medium"&gt;Prompt copied to clipboard!&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- Configuration ---</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const variableWarning = "\n\nIMPORTANT: Please wait for my input if any bracketed variables (e.g. [X] or $[amount]) are not provided above before proceeding.";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const promptLibrary = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 1,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "OTE Quota Scenario Calculator",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Model total earnings across 75%, 100%, 125%, and 150% quota attainment levels.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `I need to calculate On-Target Earnings (OTE) for a [role, e.g., "field sales rep"] with the following compensation structure:</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Base salary: $[amount]</span></p>
+<p class="p1"><span class="s1">Commission rate: [X]% on all sales</span></p>
+<p class="p1"><span class="s1">Annual quota: $[amount]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Show me total compensation (base + commission) at these quota attainment levels:</span></p>
+<p class="p1"><span class="s1">- 75%</span></p>
+<p class="p1"><span class="s1">- 100%</span></p>
+<p class="p1"><span class="s1">- 125%</span></p>
+<p class="p1"><span class="s1">- 150%</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Present results in a table with columns for: Quota %, Revenue Generated, Base Salary, Commission Earned, Total Comp.${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 2,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Structure Side-by-Side Comparison",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Compare flat commission rates vs. tiered models to see which rewards performance best.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `Compare these two commission structures for a sales rep with a $[quota] annual quota:</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Structure A:</span></p>
+<p class="p1"><span class="s1">- Base salary: $[amount]</span></p>
+<p class="p1"><span class="s1">- Commission: [X]% flat rate on all sales</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Structure B:</span></p>
+<p class="p1"><span class="s1">- Base salary: $[amount]</span></p>
+<p class="p1"><span class="s1">- Commission: Tiered</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>- 0-100% of quota: [X]%</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>- 101-125% of quota: [X]%</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>- 126%+: [X]%</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Show me total compensation for each structure at 75%, 100%, 125%, and 150% quota attainment. Then tell me:</span></p>
+<p class="p1"><span class="s1">1. Which structure rewards high performers more?</span></p>
+<p class="p1"><span class="s1">2. Which provides better downside protection?</span></p>
+<p class="p1"><span class="s1">3. At what quota level does Structure B become more lucrative than Structure A?${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 3,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Tiered Commission &amp; Accelerators",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Detailed step-by-step breakdown of tiered payouts and incremental tier value.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `I'm designing a tiered commission structure for a field sales team. Here's what I'm considering:</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Base salary: $[amount]</span></p>
+<p class="p1"><span class="s1">Annual quota: $[amount]</span></p>
+<p class="p1"><span class="s1">Tier 1 (0-100% quota): [X]% commission</span></p>
+<p class="p1"><span class="s1">Tier 2 (101-125% quota): [X]% commission</span></p>
+<p class="p1"><span class="s1">Tier 3 (126%+ quota): [X]% commission</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">For a rep who achieves [X]% of quota (selling $[amount]):</span></p>
+<p class="p1"><span class="s1">- Calculate commission earned in each tier step-by-step</span></p>
+<p class="p1"><span class="s1">- Show total commission and total compensation</span></p>
+<p class="p1"><span class="s1">- Calculate the incremental value of each tier (how much more they earn by moving from Tier 1 to Tier 2, etc.)${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 4,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Margin vs. Revenue Analysis",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Evaluate if your commission structure should focus on total sale price or gross margin.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `Compare revenue-based vs. gross-margin-based commission for these three deals:</span></p>
+<p class="p1"><span class="s1">Deal 1: Sale price $[amount], Cost $[amount]</span></p>
+<p class="p1"><span class="s1">Deal 2: Sale price $[amount], Cost $[amount]</span></p>
+<p class="p1"><span class="s1">Deal 3: Sale price $[amount], Cost $[amount]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Commission options:</span></p>
+<p class="p1"><span class="s1">Option A: [X]% commission on total sale price (revenue)</span></p>
+<p class="p1"><span class="s1">Option B: [X]% commission on gross margin (sale price minus cost)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">For each deal and for the total:</span></p>
+<p class="p1"><span class="s1">1. Show commission earned under each option</span></p>
+<p class="p1"><span class="s1">2. Calculate the difference</span></p>
+<p class="p1"><span class="s1">3. Tell me which option better incentivizes high-margin sales${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 5,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Split Commission Payouts",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Model payouts for multi-stakeholder deals, sourcing vs. closing splits.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `We have a split commission structure where:</span></p>
+<p class="p1"><span class="s1">- Field sales rep (who sources the lead): [X]% of commission</span></p>
+<p class="p1"><span class="s1">- Inside closer (who finalizes the deal): [X]% of commission</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">For a $[amount] deal with [X]% total commission rate:</span></p>
+<p class="p1"><span class="s1">1. Calculate total commission on the deal</span></p>
+<p class="p1"><span class="s1">2. Show the split for each role</span></p>
+<p class="p1"><span class="s1">3. Calculate annual earnings if the field rep sources [X] deals at this size and the closer finalizes them</span></p>
+<p class="p1"><span class="s1">4. Model a scenario where the split changes to [X]/[X]. How does compensation change for each role?${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 6,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Commission Structure ROI",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Calculate the financial impact of increasing commission to reduce sales turnover.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `I'm proposing to improve our commission structure to reduce turnover. Help me calculate the ROI:</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Current state:</span></p>
+<p class="p1"><span class="s1">- Number of sales reps: [X]</span></p>
+<p class="p1"><span class="s1">- Annual turnover rate: [X]%</span></p>
+<p class="p1"><span class="s1">- Average cost to replace a rep (recruiting, onboarding, lost productivity): $[amount]</span></p>
+<p class="p1"><span class="s1">- Current commission cost per rep: $[amount]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Proposed change:</span></p>
+<p class="p1"><span class="s1">- Increase commission by $[amount] per rep annually</span></p>
+<p class="p1"><span class="s1">- Expected turnover reduction: [X] percentage points</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Calculate:</span></p>
+<p class="p1"><span class="s1">1. Current annual cost of turnover</span></p>
+<p class="p1"><span class="s1">2. Expected savings from reduced turnover</span></p>
+<p class="p1"><span class="s1">3. Total cost of commission increase</span></p>
+<p class="p1"><span class="s1">4. Net ROI (savings minus cost)</span></p>
+<p class="p1"><span class="s1">5. Break-even point: What % turnover reduction is needed to justify the cost?${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 7,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Commission Benchmarking (2025-26)",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Compare your current compensation against the latest industry standards and splits.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `I'm paying field sales reps in the [industry] industry:</span></p>
+<p class="p1"><span class="s1">- Base salary: $[amount]</span></p>
+<p class="p1"><span class="s1">- Commission rate: [X]%</span></p>
+<p class="p1"><span class="s1">- OTE at 100% quota: $[amount]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Based on 2025-2026 data:</span></p>
+<p class="p1"><span class="s1">1. Is this competitive for this industry?</span></p>
+<p class="p1"><span class="s1">2. What's the typical base/variable split for this role?</span></p>
+<p class="p1"><span class="s1">3. What commission rates do competitors typically offer?</span></p>
+<p class="p1"><span class="s1">4. If I'm below market, how much should I increase to be competitive?${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 8,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Draw Against Commission Modeler",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Design and model ramp periods for recoverable or non-recoverable draws.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `Design a draw against commission structure for new field sales reps with:</span></p>
+<p class="p1"><span class="s1">- Monthly draw: $[amount]</span></p>
+<p class="p1"><span class="s1">- Commission rate: [X]%</span></p>
+<p class="p1"><span class="s1">- Expected ramp time: [X] months to full productivity</span></p>
+<p class="p1"><span class="s1">- Draw type: [Recoverable/Non-recoverable]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Model the first 6 months assuming:</span></p>
+<p class="p1"><span class="s1">- Month 1-2: $[amount] in sales</span></p>
+<p class="p1"><span class="s1">- Month 3-4: $[amount] in sales</span></p>
+<p class="p1"><span class="s1">- Month 5-6: $[amount] in sales</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">For each month show:</span></p>
+<p class="p1"><span class="s1">1. Commission earned</span></p>
+<p class="p1"><span class="s1">2. Draw received</span></p>
+<p class="p1"><span class="s1">3. Net payment to rep</span></p>
+<p class="p1"><span class="s1">4. Cumulative balance owed (if recoverable)</span></p>
+<p class="p1"><span class="s1">5. When they break even (commission &gt; draw)${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 9,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Multiplier Commission Modeler",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Model effective rates when using multipliers for high or low quota attainment.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `Our commission structure uses multipliers based on quota attainment:</span></p>
+<p class="p1"><span class="s1">Base commission rate: [X]%</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Multipliers:</span></p>
+<p class="p1"><span class="s1">- &lt;75% quota: 0.8× (effective rate: [X]%)</span></p>
+<p class="p1"><span class="s1">- 75-100% quota: 1.0× (effective rate: [X]%)</span></p>
+<p class="p1"><span class="s1">- 101-125% quota: 1.2× (effective rate: [X]%)</span></p>
+<p class="p1"><span class="s1">- 126%+: 1.5× (effective rate: [X]%)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">For a rep with $[quota] who sells $[actual amount]:</span></p>
+<p class="p1"><span class="s1">1. Calculate their quota attainment percentage</span></p>
+<p class="p1"><span class="s1">2. Determine which multiplier applies</span></p>
+<p class="p1"><span class="s1">3. Show the effective commission rate</span></p>
+<p class="p1"><span class="s1">4. Calculate total commission earned</span></p>
+<p class="p1"><span class="s1">5. Compare to a flat [X]% rate with no multipliers${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: 10,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>name: "Optimal Rate Discovery",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>description: "Find the exact commission rate needed to reach a specific OTE and base/variable split.",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>prompt: `Help me find the optimal commission rate for our team:</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Constraints:</span></p>
+<p class="p1"><span class="s1">- We can afford total sales comp (base + commission) of $[amount] per rep at 100% quota</span></p>
+<p class="p1"><span class="s1">- Base salary must be at least $[amount] (competitive floor)</span></p>
+<p class="p1"><span class="s1">- Annual quota per rep: $[amount]</span></p>
+<p class="p1"><span class="s1">- We want a [X]/[X] base/variable split</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Calculate:</span></p>
+<p class="p1"><span class="s1">1. What commission rate achieves this split?</span></p>
+<p class="p1"><span class="s1">2. Show OTE at 75%, 100%, 125% quota</span></p>
+<p class="p1"><span class="s1">3. Compare this to industry benchmarks for [industry]</span></p>
+<p class="p1"><span class="s1">4. Tell me if this rate is competitive enough to attract top talent${variableWarning}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- Logic ---</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const gemsGrid = document.getElementById('gemsGrid');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const searchInput = document.getElementById('searchInput');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const emptyState = document.getElementById('emptyState');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const themeToggle = document.getElementById('themeToggle');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const toast = document.getElementById('toast');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function init() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderGems();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setupTheme();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function setupTheme() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>themeToggle.addEventListener('click', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const isDark = document.documentElement.classList.toggle('dark');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('theme', isDark ? 'dark' : 'light');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) &amp;&amp; window.matchMedia('(prefers-color-scheme: dark)').matches)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.documentElement.classList.add('dark');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderGems() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const query = searchInput.value.toLowerCase();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const filtered = promptLibrary.filter(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return item.name.toLowerCase().includes(query) || item.description.toLowerCase().includes(query);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gemsGrid.innerHTML = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (filtered.length === 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>emptyState.classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>emptyState.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>filtered.forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const card = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>card.className = 'gem-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-sm flex flex-col hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/5';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>card.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="flex-grow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;${item.name}&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-slate-500 dark:text-slate-400 text-sm mb-4 leading-relaxed"&gt;${item.description}&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-slate-50 dark:bg-slate-950/50 p-3 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;p class="prompt-preview text-xs text-slate-500 italic"&gt;"${item.prompt.substring(0, 120)}..."&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-col gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button onclick="handleAction('${btoa(unescape(encodeURIComponent(item.prompt)))}', 'gemini')" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-all active:scale-[0.98]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                 </span>Copy &amp; Gemini</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="grid grid-cols-2 gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button onclick="handleAction('${btoa(unescape(encodeURIComponent(item.prompt)))}', 'chatgpt')" class="bg-slate-800 hover:bg-slate-700 text-white py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center transition-all"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>ChatGPT</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button onclick="handleAction('${btoa(unescape(encodeURIComponent(item.prompt)))}', 'copy')" class="bg-purple-600 hover:bg-purple-700 text-white py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center transition-all"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>Copy Text</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>gemsGrid.appendChild(card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function handleAction(encodedPrompt, target) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const promptText = decodeURIComponent(escape(atob(encodedPrompt)));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const textarea = document.createElement('textarea');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>textarea.value = promptText;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>textarea.style.position = 'fixed';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>textarea.style.left = '-9999px';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.body.appendChild(textarea);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>textarea.select();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.execCommand('copy');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showToast();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (target === 'gemini') window.open('https://gemini.google.com/app', '_blank');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (target === 'chatgpt') window.open('https://chatgpt.com/', '_blank');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (err) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.error('Clipboard error:', err);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.body.removeChild(textarea);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function showToast() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>toast.style.opacity = '1';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>toast.style.transform = 'translate(-50%, -20px)';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>toast.style.pointerEvents = 'auto';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>toast.style.opacity = '0';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>toast.style.transform = 'translate(-50%, 0)';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>toast.style.pointerEvents = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 2500);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>searchInput.addEventListener('input', renderGems);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>init();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
